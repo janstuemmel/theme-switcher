@@ -1,19 +1,14 @@
 {
   "name": "theme-switcher",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "web-ext run",
-    "lint": "web-ext lint",
     "clean": "rm -rf web-ext-artifacts",
-    "build": "npm run clean && npm run lint && web-ext build -i package*.json LICENSE README.md docs"
+    "start": "web-ext run -s src",
+    "lint": "web-ext lint -s src",
+    "build": "web-ext build -s src",
+    "bundle": "run-s clean lint build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "web-ext": "^7.1.0"
   }
 }

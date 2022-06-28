@@ -6,10 +6,10 @@
   "homepage_url": "https://github.com/janstuemmel/theme-switcher",
   "browser_action": {
     "default_title": "Fast Theme Switcher",
-    "default_popup": "src/popup.html",
+    "default_popup": "popup.html",
     "browser_style": true,
     "default_icon": {
-      "128": "src/icon.svg"
+      "128": "icon.svg"
     }
   },
   "permissions": [
@@ -17,9 +17,9 @@
     "storage"
   ],
   "icons": {
-    "48": "src/icon.svg",
-    "96": "src/icon.svg",
-    "128": "src/icon.svg"
+    "48": "icon.svg",
+    "96": "icon.svg",
+    "128": "icon.svg"
   },
   "browser_specific_settings": {
     "gecko": {

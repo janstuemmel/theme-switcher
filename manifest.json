@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "version": "1.0",
-  "name": "Theme Switcher",
+  "version": "1.1",
+  "name": "Fast Theme Switcher",
   "description": "Switch between light/dark theme",
   "homepage_url": "https://github.com/janstuemmel/theme-switcher",
   "browser_action": {
-    "default_title": "Theme Switcher",
+    "default_title": "Fast Theme Switcher",
     "default_popup": "src/popup.html",
     "browser_style": true,
     "default_icon": {
@@ -24,7 +24,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "theme-switcher@janstuemmel.github.io",
-      "strict_min_version": "55.0a1"
+      "strict_min_version": "57"
     }
   }
 }

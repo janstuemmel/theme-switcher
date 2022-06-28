@@ -1,7 +1,3 @@
-const lightThemesSelect = document.getElementById('light-themes');
-const darkThemesSelect = document.getElementById('dark-themes');
-const switchThemesButton = document.getElementById('switch-themes');
-
 function getThemes() {
   return browser.management.getAll().then(extensions => 
     extensions.filter((extension) => extension.type === 'theme')
@@ -43,12 +39,20 @@ async function switchTheme(evt) {
 }
 
 async function init() {
+  // nodes
+  const lightThemesSelect = document.getElementById('light-themes');
+  const darkThemesSelect = document.getElementById('dark-themes');
+  const switchThemesButton = document.getElementById('switch-themes');
+
+  // add select options
   const themes = await getThemes();
   appendSelectOptions(lightThemesSelect, themes, 'light');
   appendSelectOptions(darkThemesSelect, themes, 'dark');
+  
+  // listeners
+  lightThemesSelect.addEventListener('change', saveSelectTheme('light'));
+  darkThemesSelect.addEventListener('change', saveSelectTheme('dark'));
+  switchThemesButton.addEventListener('click', switchTheme);
 }
 
 document.addEventListener('DOMContentLoaded', init);
-lightThemesSelect.addEventListener('change', saveSelectTheme('light'));
-darkThemesSelect.addEventListener('change', saveSelectTheme('dark'));
-switchThemesButton.addEventListener('click', switchTheme);

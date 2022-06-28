@@ -2,6 +2,8 @@
 
 This simple extension lets you quickly switch between themes. You can select your default light or dark theme and then switch between those with a simple click.
 
+[Firefox Add-Ons - Fast Theme Switcher](https://addons.mozilla.org/de/firefox/addon/fast-theme-switcher/)
+
 ![](docs/screen.jpg)
 
 ## Development

@@ -1,12 +1,19 @@
 # Firefox theme switcher
 
-a firefox extension to switch between light/dark theme.
+This simple extension lets you quickly switch between themes. You can select your default light or dark theme and then switch between those with a simple click.
+
+![](assets/screen.jpg)
 
 ## Development
 
 ```sh
 npm i
+
+# start dev
 npm start
+
+# build zip
+npm run build
 ```
 
 ## Credits

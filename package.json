@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "web-ext run",
     "lint": "web-ext lint",
-    "build": "npm run lint && web-ext build -i package*.json"
+    "clean": "rm -rf web-ext-artifacts",
+    "build": "npm run clean && npm run lint && web-ext build -i package*.json LICENSE README.md docs"
   },
   "keywords": [],
   "author": "",

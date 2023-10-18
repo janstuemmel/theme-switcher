@@ -4,7 +4,9 @@ A simple firefox add-on that lets you quickly switch between themes. You can sel
 
 [Firefox Add-Ons - Fast Theme Switcher](https://addons.mozilla.org/de/firefox/addon/fast-theme-switcher/)
 
-![](docs/screen.jpg)
+![](docs/theme-switch-light.png)
+
+![](docs/theme-switch-dark.png)
 
 ## Development
 
@@ -15,13 +17,12 @@ npm i
 npm start
 
 # build zip
-npm run bundle
+npm run build
 ```
 
 ## Credits
 
-* Icon from [tabler/tabler-icons](https://github.com/tabler/tabler-icons)
-* CSS from [kognise/water.css](https://github.com/kognise/water.css)
+* Icons from [tabler/tabler-icons](https://github.com/tabler/tabler-icons)
 
 ## License
 

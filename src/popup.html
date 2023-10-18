@@ -6,21 +6,74 @@
     <link rel="stylesheet" href="popup.css"/>
     <script src="popup.js"></script>
   </head>
-  <body>
-    <section>
-      <button id="switch-themes" type="button">
-        Switch
-      </button>
-    </section>
-    <section>
-      <label for="light">Light theme: </label>
-      <select id="light-themes">
-        <option value="" disabled selected hidden>choose light theme</option>
-      </select>
-      <label for="light">Dark theme: </label>
-      <select id="dark-themes">
-        <option value="" disabled selected hidden>choose dark theme</option>
-      </select>
-    </section>
+  <body class="bg-slate-50 dark:bg-slate-900 outline-4 outline-red-800">
+    <div class="p-4">
+      
+      <section class="flex">
+        <button class="flex flex-1 items-center gap-4 shadow-lg tracking-widest justify-center uppercase bg-slate-900 dark:bg-slate-50 hover:bg-slate-700 text-slate-300 dark:text-slate-900 hover:dark:bg-slate-300 rounded-lg p-4 my-2 transition-colors duration-300 ease-in-out" id="switch-themes" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="hidden dark:inline" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+            <path d="M12 5l0 -2"></path>
+            <path d="M17 7l1.4 -1.4"></path>
+            <path d="M19 12l2 0"></path>
+            <path d="M17 17l1.4 1.4"></path>
+            <path d="M12 19l0 2"></path>
+            <path d="M7 17l-1.4 1.4"></path>
+            <path d="M6 12l-2 0"></path>
+            <path d="M7 7l-1.4 -1.4"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="dark:hidden" width="14" height="14" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <span>Switch</span>
+        </button>
+      </section>
+
+      <hr class="my-4 border-slate-200 dark:border-slate-800" />
+      
+      <section class="flex flex-col gap-2">
+  
+        <div class="flex items-center">
+          <label class="text-xs p-1 flex-1 flex items-center gap-2 text-slate-500" for="light">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun-high" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"></path>
+              <path d="M6.343 17.657l-1.414 1.414"></path>
+              <path d="M6.343 6.343l-1.414 -1.414"></path>
+              <path d="M17.657 6.343l1.414 -1.414"></path>
+              <path d="M17.657 17.657l1.414 1.414"></path>
+              <path d="M4 12h-2"></path>
+              <path d="M12 4v-2"></path>
+              <path d="M20 12h2"></path>
+              <path d="M12 20v2"></path>
+           </svg>
+           <span>
+             Light theme:
+           </span>
+          </label>
+          <select class="text-xs font-semibold p-2 bg-transparent text-right cursor-pointer text-slate-700 dark:text-slate-300 block appearance-none hover:bg-slate-200 dark:hover:bg-slate-800 rounded-sm transition-colors duration-300 ease-in-out" id="light-themes">
+            <option value="" disabled selected hidden>⚠️&nbsp;&nbsp;choose theme</option>
+          </select>
+        </div>
+  
+        <div class="flex items-center gap-8">
+          <label class="text-xs p-1 flex-1 flex items-center gap-2 text-slate-500" for="light">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+            </svg>
+            <span>
+              Dark theme:
+            </span>
+          </label>
+          <select class="text-xs font-semibold p-2 bg-transparent text-right cursor-pointer text-slate-700 dark:text-slate-300 block appearance-none hover:bg-slate-200 dark:hover:bg-slate-800 rounded-sm transition-colors duration-300 ease-in-out" id="dark-themes">
+            <option value="" disabled selected hidden>⚠️&nbsp;&nbsp;choose theme</option>
+          </select>
+        </div>
+  
+      </section>
+    </div>
   </body>
 </html>
